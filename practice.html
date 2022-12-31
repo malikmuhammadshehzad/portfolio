@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // {date : 24-12-2022}
+// spread Operators
+// rest operators
+// destructuring
+// Pass By value and Pass By Reference
+// promise
+// async await
+
+// === functions ===
+// 1: higher order
+// 2: callback function
+// 3: Arrow function
+// 4: Closures
+// 5: lexical scoping
+// 6: default peramter
+// === Array Methods ===
+// 1: map
+// 2: filter
+// 3: foreach
+// 4: reduce
+// 5: some
+// 6: find
+// 7: findIndex
+// 8: flat
+
+ 
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
+
+        // function test (name){
+        // console.log(name+" is good boy")
+        // }
+        //  let name="malik";
+        //  let name1="Shehzad"
+        //  let name2="Uraish"
+        //  test(name)
+        //  test(name1)
+        //  test(name2)
+    //  IIIIIIIIIIIIIII pass by valua IIIIIIIIIIIIIII//
+        //  let a =5
+        //   let b =a
+        //       b=a+5
+        //  console.log(a)
+        //  console.log(b)
+        //  let obj={
+        //     name:"malik",
+        //     id:1234
+        //  }
+        //  let obj2=obj
+        //  obj2.id=3451
+        //  console.log(obj)
+        //  console.log(obj2)
+    //     let num =2
+    //    let  num1=num
+    //          num1= 5+num+num1
+    //     console.log(num)
+    //     console.log(num1)
+//     let obj={
+//         name:"shehzad",
+//         id:1234,
+//     }
+//  let obj2=obj
+//  obj2.id=22
+//  console.log(obj)
+//  console.log(obj2)
+//  let arr=[1,34,67,"shehzad"]
+//      let arr2=arr
+//      arr2[3]="Malik"
+//      console.log(arr2)
+//      console.log(arr)
+
+// IIIIIIIIIIIIIIIIIII PROMIS IIIIIIIIIIIIIIIIIIIIIII
+
+    // let promise = new promise(function(resolve,reject){
+    //     alert("Hello")
+    //     resolve(56)
+    //  })    
+    //     console.log("Hello One")   
+    //  setTimeout(function(){
+    //     console.log("Hello in 2 second")
+    //  },2000)
+    // console.log("My name is " + "Three ")
+    // console.log(promise)
+    // let p =new promise((resolve,reject)=>{
+    //     console.log("promise is pending")
+    //     setTimeout(()=>{
+    //         console.log("I am a promise and i am fulfiled")   
+    //         resolve(true)         
+    //     } , 5000)
+    // })
+//   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ height order funtion @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22
+//   Higher Order Funtion;
+//    funtion which take another funtion as an argument is called HOF.
+    //  Call Back Funtion;
+    // Function which get passed as an argument to another funtion is called CBF.
+
+      // let add=(x,y)=>{
+      //   return x+y
+      // } 
+      // let sub=(x,y)=>{
+      //   return Math.abs(x-y)
+      //  }
+      //  let mul=(x,y)=>{
+      //   return (x*y)
+      //  }
+      // let calculator=(num1,num2, pro)=>{
+      //   return pro (num1, num2 )
+      // }
+      // console.log (calculator(5,6,add))
+      // console.log(calculator(5,8,sub))
+      // console.log(calculator(5,8,mul))
+      // again
+    //   let add=(a,b)=>{
+    //      return(a+b)
+    //   }
+    //   let sub=(a,b)=>{
+    //     return(a-b)
+    //   }
+    //   let mul=(a,b)=>{    
+    //     return(a*b)
+    //   }
+    //   let calculator=(num,num2,func)=>{
+    //     return (num+num2)
+    //   }
+    //   console.log(calculator(5,7,add))
+    //   console.log(calculator(5,7,sub))
+    //   console.log(calculator(5,7,mul))
+    // IIIIIIIIIIIIIIIIIIII AGAIN IIIIIIIIIIIIIIIIIIII
+//   let add=(a,b)=>{
+//     return(2+4)
+//   }
+//   let calculator=(func,num,num2)=>{
+//       return func(num,num2)
+//   }
+//   console.log(calculator(add,4,4))
+       // console.log(calculator(add,4,4))
+
+      // IIIIIIIIIIIIIIIIIIIIIIIIIIIIi arrow funtion
+      // let sayhello=(name,greeting)=>{
+      //   console.log(greeting+" "+name)
+      // }
+      // sayhello("Malik","Good Morning")
+      // let x = {
+      //   name: "malik",
+      //   role: "js Developer",
+      //   erp: 2,
+      //   show: function () {
+      //     // let that=this
+      //     setTimeout(() => {
+      //       console.log(`the name is  ${this.name}\nthe role is ${this.role}`);
+      //     }, 2000);
+      //   },
+      // };
+      // x.show();
+      // IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII Closures IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+      // messege = "good morning";
+      // function hello() {
+      //   let messege = "Good morning";
+      //   {
+      //     let messege = "Good Afternoon";
+      //     console.log("Hello1:"+ messege);
+      //   }
+      //   let c=function(){
+      //     console.log("i am c" + messege)
+      //   }
+      //   return c
+      // }
+      // c= hello()
+      // c()
+      // hello()
+      // IIIIIIIIIIIIIIIII DEfolt parameter IIIIIIIIIIIIIIIII
+      // let mul=(a,b=4)=>{
+      //   console.log("the multipication of two number is " + a*b )
+      // }
+      // mul(4)
+      // OIIIIIIIIIIIIIIIIIIIII map IIIIIIIIIIIIIIIIII
+      // let arr = [11, 22, 33, 44, 55];
+      // // console.log(arr);
+      // let a = arr.map((valua,index,array) => {
+      //   console.log(valua,index,array);  
+      //   return valua + index;
+      // });
+      // console.log(a)
+      // IIIIIIIIIIIIIIIIIIII Filter IIIIIIIIIIIIIIIIIIII
+    //   let arr=[12,3,4,66,1,9,8]
+    //   let a=arr.filter((a)=>{
+    //     return a<10
+    //   })
+    //   console.log(a,arr)
+//    IIIIIIIIIIIII reduce IIIIIIIIIIIII
+    // let arr =[1,2,3,5,7,2]
+    // let arr2=arr.reduce((h1,h2)=>{
+    //     return h1+h2
+    // })
+    // console.log(arr2)
+//  IIIIIIIIIIIIIIIIII some IIIIIIIIIIIIIIIIII
+// let arr=[1,23,45,51,63,7]
+// let arr2=arr.some((num)=>{
+//     return num%2===0
+// })
+// console.log(arr2)
+// IIIIIIIIIII EVERY IIIIIIIIIII
+// let arr=[12,2,46,54,64,7]
+// let arr2=arr.every((num)=>{
+//     return num%2===0
+// })
+// console.log(arr2)
+// IIIIIIIIIII FIND IIIIIIIIIII
+// let arr=[23, 45,3,5,8,9,19,18]
+// let arr2=arr.find((age)=>{
+//     return age<=18
+// })
+// console.log(arr2)
+// IIIIIIIIIIIIIIIIII FIND INDEX IIIIIIIIIIIIIIIIII
+// let arr=[23,12,34,56,78,90,1]
+// let arr2=arr.findIndex((num)=>{
+//     return num<2
+// })
+// console.log(arr2)
+// IIIIIIIIIIIIIIIIIIIII FLAT IIIIIIIIIIIIIIIIIIIII
+// The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+ 
+// let arr=[1,2,[[[[[[[[9,10]]]]]]]]]
+// console.log(arr.flat(6))
+// IIIIIIIIIIIIIIIIIIIIIIIII AGAIN resT OPERATORIIIIIIIIIIIIIIIIII
+
+     </script>
+</body>
+</html> 
